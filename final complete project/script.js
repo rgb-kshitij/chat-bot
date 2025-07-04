@@ -50,7 +50,7 @@ async function sendMessage() {
         chatHistory.push({ role: "user", parts: [{ text: message }] });
 
         const payload = { contents: chatHistory };
-        const apiKey = "AIzaSyDNlA57npz-QyVlIEUNb48_77MTfWOB62Y"; //API KEY
+        const apiKey = ""; //API KEY
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
         const response = await fetch(apiUrl, {
